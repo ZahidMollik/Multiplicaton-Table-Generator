@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blog.css">
+  <title>Blog</title>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./blog.html">Blog</a>
+  </nav>
+  <div class="container">
+    <h1>JavaScript Questions</h1>
+    <div class="question">
+      <h3>1. What is the difference between let, const, and var in Javascript?</h3>
+      <div class="Ans">Ans:
+        <p><b>Var:</b> This is the oldest way to declare variables in JavaScript. Variables declared with var are function-scoped, meaning they are only available within the function they are declared in. If declared outside a function, they are globally scoped. var can be re-declared and updated.
+        </p>
+      <p><b>let:</b> let is block-scoped, meaning it is only available within the block it is declared in. let can be updated but not re-declared within the same scope.
+      </p>
+      <p><b>const:</b> const is block-scoped like let. However, variables declared with const cannot be updated or re-declared. They must be assigned a value at the time of declaration.
+      </p>
+      </div>
+      <h3>2. What is the difference between find(), filter method?</h3>
+      <div class="Ans">Ans:
+        <p><b>find():</b> This method returns the first element in an array that satisfies a provided testing function. If no elements satisfy the condition, it returns undefined.
+        </p>
+        <p><b>filter():</b> This method returns a new array containing all elements that satisfy the provided testing function. If no elements satisfy the condition, it returns an empty array.
+        </p>
+      </div>
+      <h3>3. How do you select an element in the DOM using JavaScript? Name a few methods?</h3>
+      <div class="Ans">Ans:
+        <p><b>document.getElementById('id'): </b>Selects an element by its unique ID.
+        </p>
+        <p><b>document.getElementsByClassName('class'): </b>Selects all elements with the specified class name and returns a collection.
+        </p>
+        <p><b>document.getElementsByTagName('tag'): </b> Selects all elements with the specified tag name and returns a collection.
+        </p>
+        <p><b>document.querySelector('selector'): </b> Selects the first element that matches a specified CSS selector.
+        </p>
+        <p><b>document.querySelectorAll('selector'): </b>
+          Selects all elements that match a specified CSS selector and returns a NodeList.
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <small>©2025 Multiplicaton Generator. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>
