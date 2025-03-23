@@ -5,8 +5,12 @@ function multiplicationGenerator() {
   let num = document.getElementById("in-num").value;
   let table = document.getElementById("table");
 
-  if (num === "" || isNaN(num) || num<=0) {
+  if (num === "" || isNaN(num)) {
     alert("Please enter a valid number!");
+    return;
+  }
+  else if(num<=0){
+    alert("Please enter a number greater than 0!");
     return;
   }
 
