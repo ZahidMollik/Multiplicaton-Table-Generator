@@ -18,7 +18,6 @@ function multiplicationGenerator() {
   for (let i = 1; i <= 10; i++) {
     let row = table.insertRow();
     let cell1 = row.insertCell(0);
-    cell1.textContent = num;
     cell1.textContent = num+" x "+i + " = " + (num * i);
   }
 };
